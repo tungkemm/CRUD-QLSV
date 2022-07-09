@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
-}
+@import "~antd/dist/antd.css";
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.header-button {
+  display: inline-block;
+  text-align: center;
+  padding: 0 20px;
+  background: #001529;
+  border: none;
   color: white;
+  font-size: 20px;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.header-button:hover {
+  color: #001529;
+  background-color: #ccc;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header-login:hover .header-usernamelogout {
+  display: block;
+}
+
+.header-usernamelogin {
+  margin-right: 10px;
+}
+
+.header-usernamelogout {
+  position: absolute;
+  right: 0;
+  background-color: #001529;
+  width: 100%;
+  display: none;
+  color: white;
+  z-index: 1;
+}
+
+.header-usernamelogout:hover {
+  background-color: #ccc;
+  color: #001529;
+}
+
+/* ////////////// */
+.manage,
+.decentralization,
+.home,
+.login {
+  background-color: lightsteelblue;
+  padding: 20px 160px;
+}
+
+.manage-title,
+.decentralization-title,
+.home-title,
+.login-title {
+  text-align: center;
+  font-size: 30px;
+  margin: 20px 0 40px;
+  font-weight: bold;
+}
+
+.manager-action-icon,
+.decentralization-action-icon {
+  font-size: 18px;
+  color: #222;
+  cursor: pointer;
+  margin: 0 6px;
+}
+
+.manage-btn-add {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* //////////// */
+.managerlist_modal_create-and-update .ant-modal-footer {
+  display: none;
+}
+
+.modal-btn-save {
+  margin-top: 16px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ////////////////// */
+.home-guide-item {
+  margin-bottom: 40px;
+}
+
+/* //////// */
+.login {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center; 
+}
+
+.login-form{
+  width: 100%;
 }
