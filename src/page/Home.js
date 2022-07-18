@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <div className="home">
       <div className="home-title">Quan ly sinh vien</div>
-      <div className="home-guide">
+      {/* <div className="home-guide">
         <div className="home-guide-item">
           <h2>Chưa đăng nhập</h2>
           <ul>
@@ -36,7 +36,7 @@ const Home = () => {
             <li>Không được xem thông tin các tài khoản đã đăng nhập</li>
           </ul>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

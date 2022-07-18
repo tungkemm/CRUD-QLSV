@@ -84,7 +84,7 @@ const Login = () => {
             span: 16,
           }}
         >
-          <Button type="primary" htmlType="submit" className="login-btn-login">
+          <Button type="primary" htmlType="submit">
             Login
           </Button>
         </Form.Item>
